@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
   }
+
   body{
     background-color: rgb(237, 239, 239);
   }
@@ -38,19 +39,17 @@
     cursor: pointer;
   }
   
-  
-  
-  
-  
   fieldset div label {
     padding: 5px;
   }
+
   fieldset legend{
     font-size: 20px;
     margin: 5px;
     font-weight: 600;
     text-decoration: underline;
   }
+
   @media only screen and (min-width: 768px) {
     .categories fieldset {
       display: grid;
