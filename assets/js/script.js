@@ -1,4 +1,5 @@
 const traductions = {
+    
     Français: {
       accueil: "Accueil",
       services: "Services",
@@ -7,6 +8,7 @@ const traductions = {
       titre: "AlloHmizat",
       vetements: "Couture des vêtements modernes",
     },
+    
     Arabic: {
       accueil: "الصفحة الرئيسية",
       services: "الخدمات",
@@ -15,6 +17,7 @@ const traductions = {
       titre: "ألو هميزات",
       vetements: "خياطة الملابس العصرية",
     },
+    
   };
   
   var articles = [
@@ -33,7 +36,9 @@ const traductions = {
   ];
   
   var divpublications = document.getElementById("publications");
+
   var div;
+
   var articles_affiche = articles;
   
   // ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -51,12 +56,14 @@ const traductions = {
   
     CreerDonnees(articles_affiche, langue);
   }
+
   // ---------------------------------------------------------------------------------------------------------------------------------------------------------
   function detail(id) {
     $(document).ready(function () {
       $(`#div${id}`).toggle(1000);
     });
   }
+
   // ---------------------------------------------------------------------------------------------------------------------------------------------------------
   function ChangeLangue(btn) {
     setLanguage(btn.value);
@@ -65,6 +72,7 @@ const traductions = {
     btn.value = btn.value == "Arabic" ? "Français" : "Arabic";
     document.querySelector('title').textContent = btn.value == "Arabic" ? traductions["Français"]["titre"] : traductions["Arabic"]["titre"]; 
   }
+
   // ---------------------------------------------------------------------------------------------------------------------------------------------------------
   const setLanguage = (language) => {
     const elements = document.querySelectorAll("[data-i18n]");
@@ -96,10 +104,6 @@ const traductions = {
           else div += `<div class="carousel-item">`;
           div += `<div>`;
           div += `<img onclick='detail(${k})' src="${art[0][i][0]}" class="d-block w-100 img-publications" alt="${i}" />`;
-          //  div += `<div class="carousel-caption">`;
-          //  div += `<h5>${art[0][i][1]}</h5>`;
-          //  div += `<p>${art[0][i][2]}</p>`;
-          //  div += `</div>`;
           div += `</div>`;
           div += `</div>`;
         }
@@ -137,6 +141,7 @@ const traductions = {
       divpublications.innerHTML = `<div class='alert alert-danger w-100 container fw-bold text-center'>${message}</div>`;
     }
   }
+
   document.body.addEventListener(
     "load",
     CreerDonnees(articles_affiche, "Arabic")
