@@ -2,42 +2,60 @@
     box-sizing: border-box;
   }
 
+
+
   body{
     background-color: rgb(237, 239, 239);
   }
-  
+
+
+
   button {
     border: 0;
     padding: 0;
     background: transparent;
     cursor: pointer;
   }
-  
+
+
+
   .navbar,
   .navbar-burger,
   .menu {
     position: fixed;
   }
+
+
   .content{
     margin-top: 80px;
   }
+
+
   
   .img-publications{
     height: 350px;
   }
+
+
   
   fieldset{
     border: 0.1px solid rgba(0, 0, 0, 0.2);
   }
+
+
   fieldset div{
     margin: 10px;
     font-size: 16px;
   }
+
+
   fieldset div input{
     width: 15px;
     height: 15px;
     cursor: pointer;
   }
+
+
   
   fieldset div label {
     padding: 5px;
@@ -50,12 +68,16 @@
     text-decoration: underline;
   }
 
+
+
   @media only screen and (min-width: 768px) {
     .categories fieldset {
       display: grid;
       grid-template-columns: repeat(6, minmax(150px, 1fr)); 
       gap: 10px;
     }
+
+      
     .publications{
       display: grid;
       grid-template-columns: repeat(2, minmax(150px, 1fr)); 
@@ -65,7 +87,6 @@
       font-size: 17px;
     }
     
-    
   }
   
   
@@ -73,17 +94,21 @@
     .categories fieldset {
       display: block;
     }
+      
     .publications{
       display: block;
     }
+      
     .img-publications{
       height: 200px;
     }
+      
     .description_publication{
       font-size: 12px;
     }
   }
-  
+
+
   .navbar {
     z-index: 1;
     top: 0;
