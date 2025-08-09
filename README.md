@@ -1,20 +1,20 @@
 # Tierra Y Mar Moto
 
-Site web officiel de Tierra Y Mar Moto - Vente, location et tours de motos à Nador, Maroc.
+Official website for Tierra Y Mar Moto - Motorcycle sales, rentals, and tours in Nador, Morocco.
 
-🔗 **Site en ligne** : [https://tierraymarmoto.netlify.app/](https://tierraymarmoto.netlify.app/)
+🌐 **Live Site**: [https://tierraymarmoto.netlify.app/](https://tierraymarmoto.netlify.app/)
 
 ---
 
-## Installation locale (via GitHub)
+## Local Installation (via GitHub)
 
-Pour installer et exécuter ce site localement :
+To install and run this site locally:
 
-1. **Cloner le dépôt** :
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/BilalDaoudi/Tierra-Y-Mar-Moto.git
    cd Tierra-Y-Mar-Moto
 
-2. Ouvrir le site :
-Le site est statique (HTML/CSS). Ouvrez simplement index.html dans votre navigateur.
+2. Open the site:
 
+This is a static (HTML/CSS) site. Simply open index.html in your browser.
